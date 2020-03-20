@@ -184,7 +184,7 @@ p {
   justify-content: space-evenly;
   margin: 3% 20%;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .intro .nav1 nav {
     margin: 5% 0%;
   }
@@ -194,7 +194,7 @@ p {
   color: black;
   font-size: 1.5rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .intro .nav1 nav a {
     margin: 1% 0%;
     font-size: 1rem;
@@ -207,7 +207,7 @@ p {
   margin: 0% 10%;
   border-radius: 2%;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .intro img {
     margin: 0%;
     width: 100%;
@@ -256,6 +256,14 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -283,27 +291,65 @@ footer {
 .home .walk .walk-text .btn h4 {
   color: white;
 }
+@media (max-width: 800px) {
+  .home .walk .walk-text .btn h4 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .home .walk .walk-text .btn {
+    display: flex;
+    justify-content: center;
+    margin: 5% 32%;
+    width: 30%;
+  }
+}
+@media (max-width: 800px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 800px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-.home .space-images .blast {
-  width: 100%;
-  margin: 10% 0%;
-  border-radius: 10px;
+@media (max-width: 800px) {
+  .home .walk .walk-img img {
+    width: 100%;
+    margin: 0;
+  }
 }
-.home .space-images .sky {
-  /* @media @phone{
-        display: none;
-    }*/
+@media (max-width: 800px) {
+  .home .walk .walk-img img {
+    width: 100%;
+    margin: 0;
+  }
 }
-.home .space-images .launch {
-  /* @media @phone{
-          display: none;
-      }*/
+@media (max-width: 800px) {
+  .home .space-images .blast {
+    width: 100%;
+    margin: 10% 0%;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .home .space-images .launch {
+    display: none;
+  }
 }
