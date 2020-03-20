@@ -1,75 +1,166 @@
 // Home Content
 
+
 .home {
 
-  .intro {
+    .intro {
 
-    h2 {
-      padding: 15px;
-    }
-
-    p {
-      padding:0 15px;
-    }
-  
-  }
-
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
-
-  .visit-planets {
-    padding: 15px;
-
-    h3 {
-      margin-top: 11px;
-    }
-
-    p {
-      margin-top: 13px;
-    }
-  }
-
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
-
-    .walk-text {
-      width: 50%;
-
-      h3 {
-        margin-bottom: 10px;
+      h2 {
+        padding: 15px;
       }
 
       p {
-        margin-bottom: 26px;
+        padding:0 15px;
       }
-
-      .btn {
-      }
+    
     }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
+    .space-images {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
       img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        width: 28%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
       }
     }
+
+    .visit-planets {
+      padding: 15px;
+
+      h3 {
+        margin-top: 11px;
+      }
+
+      p {
+        margin-top: 13px;
+      }
+    }
+
+    .walk {
+      margin-top: 60px;
+      border-top: 1px solid @main-border-color;
+      padding: 50px 60px;
+      display: flex;
+      justify-content: center;
+
+      @media @phone{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0%;
+
+      }
+
+      .walk-text {
+        width: 50%;
+
+        h3 {
+          margin-bottom: 10px;
+        }
+
+        p {
+          margin-bottom: 26px;
+        }
+
+
+        .btn:hover {
+            background-color: blue;
+            
+            h4{
+              font-style: italic;
+            }
+        }
+
+
+        .btn {
+
+          
+          .btn1(4px, black);
+          width: 18%;
+          height: 10%;
+          .center();
+          align-items: center;
+              
+              h4{
+                  color: white;
+                  @media @phone{
+                  font-size: 2rem;
+                  }
+                }
+        @media @phone{
+          .center();
+          margin: 5% 32%;
+          width: 30%;
+
+        }
+
+      }
+        @media @phone{
+          width: 100%;
+        }
+      }
+
+      .walk-img {
+        width: 46%;
+        margin-left: 4%;
+
+        @media @phone{
+          width: 100%;
+          margin: 0;
+        }
+        
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+
+          @media @phone{
+            width: 100%;
+            margin: 0;
+        }
+
+        @media @phone{
+          width: 100%;
+          margin: 0;
+          }
+      }
+    }
+      
+   
   }
-}// home
+
+  .space-images{
+
+    .blast{
+
+      @media @phone{
+          width: 100%;
+          margin: 10% 0%;
+          border-radius: 10px;
+        }
+      }
+
+    .sky{
+
+      @media @phone{
+          display: none;
+      }
+
+    }
+
+    .launch{
+        @media @phone{
+            display: none;
+        }
+    }
+
+
+
+  }
+
+
+}
