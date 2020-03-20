@@ -42,9 +42,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+        10px font size on the body would override that browser setting. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
-     10px font size on the body would override that browser setting. 
+        Preprocessing is a more organized and ro-bust language for css which is then compiled into CSS for the brower to read
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
